@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#container-1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(153, 154, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#card{
+    width:  300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+#card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit:cover ;
+    object-position: center;
+}
+#card h1{
+    font-size: 25px;
+    margin: 15px 0px;
+    color: rgb(38, 51, 38);
+    text-align: center;
+    font-weight: 800;
+}
+#card h5{
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    color: rgb(171, 5, 5);
+    font-weight: 600;
+    
+}
+#btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#card button{
+      background-color: black;
+      color: rgb(187, 188, 188);
+      padding: 10px;
+      border-radius: 50px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+}
+#card #remove{
+     background-color: #adadad;
+     color: black;
+}
+/* ------------------------------------------------------- */
+#container-2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-2{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+#card-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#card-2 i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)  scale(0);
+    opacity: 0;
+    transition: ease-out 0.4s;
+}
+/* -------------------------------------------- */
+
+#cursor{
+        height: 17px;
+        width: 17px;
+        background-color: #fff;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        position: absolute;
+        transition: all linear 0.1s;
+}
+
+#container-3{
+    height: 100%;
+    width: 100%;
+    background-color: #48438b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-3{
+    height: 500px;
+    width: 320px;
+    background-color: #000;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+#stories{
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom:1px solid #adadad  ;
+}
+#stories::-webkit-scrollbar{
+    display: none;
+}
+#stories .story{
+    height: 90px;
+    width: 90px;
+    border: 2px solid rgb(151, 9, 9);
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#stories img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    object-fit: cover;
+    object-position: center;
+    
+}
